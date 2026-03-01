@@ -253,32 +253,12 @@ If none of the above modes are enabled or have targets, the Auto Hatchery will s
 <hr>
 
 <a name="enhanced-auto-mine"></a>
-## Enhanced Auto Mine (<a href="https://github.com/Ephenia/Pokeclicker-Scripts/blob/master/enhancedautomine.user.js">enhancedautomine.user.js</a>) (<a href="https://github.com/Ephenia/Pokeclicker-Scripts/raw/master/enhancedautomine.user.js">One-Click Install</a>)
-This script was originally created by <b>Ivan Lay</b> and [can be found over here](//github.com/ivanlay/pokeclicker-automator).
+## Enhanced Auto Mine (<a href="https://github.com/MaxBernede/Pokeclicker-Scripts/blob/master/enhancedautomine.user.js">enhancedautomine.user.js</a>) (<a href="https://github.com/MaxBernede/Pokeclicker-Scripts/raw/master/enhancedautomine.user.js">One-Click Install</a>)
 
-This I had worked quite a bit on, and I'm quite happy with what it's capable of doing. This is far bigger and does a lot more than Ivan Lay's script. However, since I was using it and was inspired, I decided to make an auto miner that's as efficient as possible instead.
 
-What this script adds is a new top row below the mining layer, as shown:<br>
-
-![](https://user-images.githubusercontent.com/12092270/184208280-9ef59caf-5b0f-402a-be12-049cdad8beb3.png)
-
-There's a lot to go over and explained with this Auto Miner, but I'll try my best to explain it all:
-
-**• Auto Mine** - This will turn the Auto Miner On/Off. The Auto Miner uses bombs to automatically mine.<br>
-**• Auto Small Restore** - This will automatically buy and use Small Restores when low on energy (only while Auto Mine is running). It will only buy them when there are no Restores in your inventory and when they cost 30,000 (base price). Knowing that, this is best used anywhere you can one-shot Pokémon, so the price penalty in the Shop is constantly decreasing.<br>
-**• 1st Input Field** - The money amount below which the script will stop auto-buying Small Restores, so it won't drain all your money.<br>
-**• Dropdown Menu** - This menu lets you choose a type of item for the Treasure Hunter mode. While you have skips available, the Treasure Hunter will survey layers and skip them if they contain too few of your desired item type. The Treasure Hunter's default setting skips layers with too few total items.<br>
-**• 2nd Input Field** - The minimum number of your desired item type (or total items) for the Treasure Hunter. If the layer has fewer of the set item type the Treasure Hunter will skip it. Set this field to 0 to not skip any layers.<br>
-
-As of 1.1 this also includes 2 more additional features into the Treasures tab of the Underground as shown below:<br>
-
-![](https://i.imgur.com/H0btTjL.png)
-
-<strong>• Auto Sell Treasure</strong> - This will automatically sell any and all treasures that would give you Diamonds upon successfully mining an Underground layer.<br>
-<strong>• Auto Sell Plate</strong> - This will automatically sell any and all plates that would give you gems upon successfully mining an Underground layer.
 
 ```diff
-- Note: the Auto Miner runs once every 1 second.
+- Note: the Auto Miner needs to have Find mine automatic On
 ```
 
 <hr>
