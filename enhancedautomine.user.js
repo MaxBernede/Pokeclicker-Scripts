@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          [Pokeclicker] Updated Auto Mine (2026)
+// @name          [Pokeclicker] Enhanced Auto Mine
 // @namespace     Pokeclicker Scripts
 // @author        Kyuujin
 // @description   Automatically mines the Underground. Last update 1st March 2026
@@ -92,20 +92,24 @@ function autoHammerMine(onFinish) {
 
 	let i = 0;
 	const interval = setInterval(() => {
-        if (tools[1].canUseTool()) {
-            tools[1]._durability(1) // at some point it gets infinite so no need to check, we could remove this if statement for better perf
-        }
+		const hammer = tools.getTool(UndergroundToolType.Hammer);
+		if (!hammer) return;
+
+		if (hammer.canUseTool()) {
+			tools.selectedToolType = UndergroundToolType.Hammer;
+			UndergroundController.clickModalMineSquare(hammerTargets[i]);
+			i++;
+		} else {
+			hammer._durability(1);
+		}
 		if (i >= hammerTargets.length) {
 			clearInterval(interval);
 			onFinish?.();
 			return;
 		}
-
-		tools.selectedToolType = 1;
-		UndergroundController.clickModalMineSquare(hammerTargets[i]);
-		i++;
 	}, 80);
 }
+
 
 
 function myAutoMine() {
