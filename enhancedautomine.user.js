@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          [Pokeclicker] Enhanced Auto Mine
+// @name          [Pokeclicker] Updated Auto Mine (2026)
 // @namespace     Pokeclicker Scripts
 // @author        Kyuujin
 // @description   Automatically mines the Underground. Last update 1st March 2026
